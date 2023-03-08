@@ -1,3 +1,26 @@
+const data = [
+  {
+    category: "Reaction",
+    score: 80,
+    icon: "./assets/images/icon-reaction.svg",
+  },
+  {
+    category: "Memory",
+    score: 92,
+    icon: "./assets/images/icon-memory.svg",
+  },
+  {
+    category: "Verbal",
+    score: 61,
+    icon: "./assets/images/icon-verbal.svg",
+  },
+  {
+    category: "Visual",
+    score: 72,
+    icon: "./assets/images/icon-visual.svg",
+  },
+];
+
 export async function GET(request) {
-  return new Response('Hello, Next.js!')
+  return new Response().ok(data);
 }
